@@ -1,5 +1,7 @@
 package com.capg.demo.traineeapp.controller;
 
+import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +23,7 @@ public class TraineeRestController {
 	@GetMapping("/trainee")
 //	@ResponseBody
 	public Trainee getTrainee() {
-		return new Trainee(101,"Mahesh","DevOps","Bangalore");
+		return new Trainee(101,"Nagendra","DevOps","Bangalore",LocalDate.of(1998, 02, 11));
 	}
 	
 	@PostMapping("/trainee")

@@ -1,5 +1,6 @@
 package com.capg.demo.traineeapp.repo;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,10 +21,10 @@ Map<Integer, Trainee> trainees=new HashMap<>();
 	
 	@PostConstruct
 	public void addDummyTrainees() {
-		trainees.put(101,new Trainee(101,"Mahesh","DevOps","Bangalore"));
-		trainees.put(102,new Trainee(102,"Rohit","Java","Bangalore"));
-		trainees.put(103,new Trainee(103,"Manoj","Testing","Chennai"));
-		trainees.put(104,new Trainee(104,"Rahul","Angular","Hyderabad"));
+		trainees.put(101,new Trainee(101,"Nagendra","DevOps","Bangalore",LocalDate.of(1998, 02, 11)));
+		trainees.put(102,new Trainee(102,"Sai Rao","Java","Bangalore",LocalDate.of(1997, 04, 14)));
+		trainees.put(103,new Trainee(103,"Praveen","Testing","Chennai",LocalDate.of(1999, 04, 20)));
+		trainees.put(104,new Trainee(104,"Aakash","Angular","Hyderabad",LocalDate.of(1996, 03, 12)));
 	}
 	
 	
